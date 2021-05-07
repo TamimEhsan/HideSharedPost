@@ -1,4 +1,4 @@
-# HideSharedPost
+# Hide Shared Post
 
 
 
@@ -16,7 +16,7 @@ Scrolling through Facebook newsfeed is tough when someone keeps sharing posts li
 - Hide facebook adds
 - Create a custom popup menu with all the features
 
-## How to add
+## How to add extension
 
 - Download this repository as zip then unzip or clone to local.
 - Then go to chrome [extension](chrome://extensions/) . => That three dot in top right => More tools =>Extensions
@@ -28,3 +28,24 @@ Scrolling through Facebook newsfeed is tough when someone keeps sharing posts li
 
 ![Assets](Assets/tutorialForHide.gif)
 
+
+
+## How to add users to list
+
+Go to content.js file and you will see an array at first. Change the names there with the user name you want. 
+
+```javascript
+var names = ["Kazi Ababil Azam Talha","Kowsar Mahmud Pappu"];
+```
+
+And to block everyone change hideAll to true
+
+```javascript
+var hideAll = false;
+```
+
+
+
+## Problems
+
+As Facebook is a react app, it acts a bit different than other webpages. When you change pages from feed to someone's timeline you need to reload from task bar manually.
