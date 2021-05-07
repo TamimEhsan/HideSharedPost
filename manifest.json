@@ -1,0 +1,19 @@
+{
+  "name": "Hide Shared Post",
+  "version": "1.0",
+  "icon": {
+    "128": "logo_128.png"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*","https://*.facebook.com/*"],
+      "js": ["content.js","popup.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_title":"Hide Share"
+  },
+  "permissions": ["tabs"]
+}
