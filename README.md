@@ -49,3 +49,11 @@ var hideAll = false;
 ## Problems
 
 As Facebook is a react app, it acts a bit different than other webpages. When you change pages from feed to someone's timeline you need to reload from task bar manually.
+
+And it might be the case that the class id of facebook might change. Then the whole HTML Query Selection process wont work. But can be edited easily with some simple changes. But I hope they won't change
+
+
+
+## Conclusion
+
+If you love my work you can follow me or star this repo. Thank you
